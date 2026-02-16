@@ -1,0 +1,129 @@
+
+:root {
+  color-scheme: dark light;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button,
+a,
+span {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-family: Sans-Serif;
+}
+
+[data-orientation="vertical"]  #app {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-orientation="horizontal"] #app {
+  justify-content: flex-start;
+}
+
+#board {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}
+
+.box {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-orientation="horizontal"] .box {
+  height: 10vh;
+  width: 10vh;
+}
+
+[data-orientation="vertical"] .box {
+  height: 12vw;
+  width: 12vw;
+}
+
+.chess-piece {
+  cursor: pointer;
+  font-variation-settings: 'FILL' 1;
+}
+
+[data-orientation="horizontal"] .chess-piece {
+  font-size: 9vh;
+}
+
+[data-orientation="vertical"] .chess-piece {
+  font-size: 10vw;
+}
+
+#app.flipped .chess-piece.type-1 {
+  transform: rotate(180deg);
+}
+
+.chess-piece.type-1 {
+  color: black !important;
+}
+
+.chess-piece.type-2 {
+  color: white !important;
+}
+
+#app.black-white .box.no-color {
+  background: rgb(170, 170, 170);
+}
+
+#app.black-white .box.fill-color {
+  background: rgb(100, 100, 100);
+}
+
+#app.green .box.no-color {
+  background: rgb(0, 150, 60);
+}
+
+#app.green .box.fill-color {
+  background: rgb(120, 220, 120);
+}
+
+#app.red .box.no-color {
+  background: rgb(255, 50, 0);
+}
+
+#app.red .box.fill-color {
+  background: rgb(220, 180, 100);
+}
+
+#app.purple .box.no-color {
+  background: rgb(90, 0, 160);
+}
+
+#app.purple .box.fill-color {
+  background: rgb(200, 180, 220);
+}

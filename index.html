@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" />
+  <link rel="icon" href="./public/logo.svg">
+  <title>Chess</title>
+  <link rel="stylesheet" href="./src/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/fill/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/bold/style.css" />
+</head>
+
+<body>
+  <div id="app" data-orientation="vertical" class="red flipped">
+    <div id="board">
+      <div class="row 1">
+        <div class="box a fill-color"><span class="material-symbols-rounded chess-piece type-1">chess_rook</span></div>
+        <div class="box b no-color"><span class="material-symbols-rounded chess-piece type-1">chess_knight</span></div>
+        <div class="box c fill-color"><span class="material-symbols-rounded chess-piece type-1">chess_bishop</span></div>
+        <div class="box d no-color"><span class="material-symbols-rounded chess-piece type-1">chess_queen</span></div>
+        <div class="box e fill-color"><span class="material-symbols-rounded chess-piece type-1">chess_king</span></div>
+        <div class="box f no-color"><span class="material-symbols-rounded chess-piece type-1">chess_bishop</span></div>
+        <div class="box g fill-color"><span class="material-symbols-rounded chess-piece type-1">chess_knight</span></div>
+        <div class="box h no-color"><span class="material-symbols-rounded chess-piece type-1">chess_rook</span></div>
+      </div>
+      <div class="row 2">
+        <div class="box a no-color"><span class="material-symbols-rounded chess-piece type-1">chess_pawn</span></div>
+        <div class="box b fill-color"><span class="material-symbols-rounded chess-piece type-1">chess_pawn</span></div>
+        <div class="box c no-color"><span class="material-symbols-rounded chess-piece type-1">chess_pawn</span></div>
+        <div class="box d fill-color"><span class="material-symbols-rounded chess-piece type-1">chess_pawn</span></div>
+        <div class="box e no-color"><span class="material-symbols-rounded chess-piece type-1">chess_pawn</span></div>
+        <div class="box f fill-color"><span class="material-symbols-rounded chess-piece type-1">chess_pawn</span></div>
+        <div class="box g no-color"><span class="material-symbols-rounded chess-piece type-1">chess_pawn</span></div>
+        <div class="box h fill-color"><span class="material-symbols-rounded chess-piece type-1">chess_pawn</span></div>
+      </div>
+      <div class="row 3">
+        <div class="box a fill-color"></div>
+        <div class="box b no-color"></div>
+        <div class="box c fill-color"></div>
+        <div class="box d no-color"></div>
+        <div class="box e fill-color"></div>
+        <div class="box f no-color"></div>
+        <div class="box g fill-color"></div>
+        <div class="box h no-color"></div>
+      </div>
+      <div class="row 4">
+        <div class="box a no-color"></div>
+        <div class="box b fill-color"></div>
+        <div class="box c no-color"></div>
+        <div class="box d fill-color"></div>
+        <div class="box e no-color"></div>
+        <div class="box f fill-color"></div>
+        <div class="box g no-color"></div>
+        <div class="box h fill-color"></div>
+      </div>
+      <div class="row 5">
+        <div class="box a fill-color"></div>
+        <div class="box b no-color"></div>
+        <div class="box c fill-color"></div>
+        <div class="box d no-color"></div>
+        <div class="box e fill-color"></div>
+        <div class="box f no-color"></div>
+        <div class="box g fill-color"></div>
+        <div class="box h no-color"></div>
+      </div>
+      <div class="row 6">
+        <div class="box a no-color"></div>
+        <div class="box b fill-color"></div>
+        <div class="box c no-color"></div>
+        <div class="box d fill-color"></div>
+        <div class="box e no-color"></div>
+        <div class="box f fill-color"></div>
+        <div class="box g no-color"></div>
+        <div class="box h fill-color"></div>
+      </div>
+      <div class="row 7">
+        <div class="box a fill-color"><span class="material-symbols-rounded chess-piece type-2">chess_pawn</span></div>
+        <div class="box b no-color"><span class="material-symbols-rounded chess-piece type-2">chess_pawn</span></div>
+        <div class="box c fill-color"><span class="material-symbols-rounded chess-piece type-2">chess_pawn</span></div>
+        <div class="box d no-color"><span class="material-symbols-rounded chess-piece type-2">chess_pawn</span></div>
+        <div class="box e fill-color"><span class="material-symbols-rounded chess-piece type-2">chess_pawn</span></div>
+        <div class="box f no-color"><span class="material-symbols-rounded chess-piece type-2">chess_pawn</span></div>
+        <div class="box g fill-color"><span class="material-symbols-rounded chess-piece type-2">chess_pawn</span></div>
+        <div class="box h no-color"><span class="material-symbols-rounded chess-piece type-2">chess_pawn</span></div>
+      </div>
+      <div class="row 8">
+        <div class="box a no-color"><span class="material-symbols-rounded chess-piece type-2">chess_rook</span></div>
+        <div class="box b fill-color"><span class="material-symbols-rounded chess-piece type-2">chess_knight</span>
+        </div>
+        <div class="box c no-color"><span class="material-symbols-rounded chess-piece type-2">chess_bishop</span></div>
+        <div class="box d fill-color"><span class="material-symbols-rounded chess-piece type-2">chess_king</span></div>
+        <div class="box e no-color"><span class="material-symbols-rounded chess-piece type-2">chess_queen</span></div>
+        <div class="box f fill-color"><span class="material-symbols-rounded chess-piece type-2">chess_bishop</span>
+        </div>
+        <div class="box g no-color"><span class="material-symbols-rounded chess-piece type-2">chess_knight</span></div>
+        <div class="box h fill-color"><span class="material-symbols-rounded chess-piece type-2">chess_rook</span></div>
+      </div>
+    </div>
+  </div>
+  <script src="./src/main.js"></script>
+</body>
+
+</html>
